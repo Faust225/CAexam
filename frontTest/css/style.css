@@ -1,0 +1,242 @@
+.heading {
+		background: url(images/stars.png) center;
+		background-size: cover;
+}
+
+header {
+	flex-direction: column;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+ul {
+	display: inline-block;
+}
+
+li {
+	display: inline-block;
+}
+
+header h2 {
+	padding: 30px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+header h1 {
+	font-size: 70px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+	/* Bullet point between text */
+
+.inLine {
+	display: inline-block;
+}
+
+.bullet {
+	display: inline-block;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+.bullet ul {
+	display: list-item;
+	list-style-type: disc;
+}
+
+.bullet ul li:hover {
+	border: none;
+}
+		/* Bullet point between text end*/
+
+	/* Navigation */
+
+.navigation {
+	background: url(images/stars.png) center;
+	background-size: cover;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+}
+
+.navigation ul {
+	font-size: 30px;
+	font-weight: bold;
+  	padding-bottom: 30px;
+  	width: 100%;
+  	text-align: center;
+}
+
+.navigation li {
+	padding: 20px;
+}
+
+.active {
+	border-bottom: 3px solid #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li:hover {
+	border-bottom: 3px solid #fff;
+}
+	/* Navigation end */
+/* End of header */
+
+/* Gallery start */
+
+.gallElements {
+	position: relative;
+}
+
+.gallElements img{
+	width: 100%;
+}
+
+/* imageText - block el, what holds: img, overlay, text on hover; */
+
+.imageText { 
+  float: left;
+  width: 24.99999%;
+}
+
+/* Responsive gallery */
+
+@media only screen and (max-width: 700px) {
+  .imageText {
+    width: 49.99999%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imageText {
+    width: 100%;
+  }
+}
+
+/* Responsive gallery end */
+
+.gallElements:hover .overlay{
+	opacity: 0.8;
+	transition: 1s;
+}
+
+.overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width:100%;
+	height:100%;
+	opacity: 0;
+	transition: .5 ease;
+	background-color: black;
+	text-align: center;
+
+}
+
+.textForIMG {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.textForIMG h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+img {
+	display: block;
+	height: auto;
+
+}
+
+/* Gallery end */
+
+
+/* About start */
+
+/* 3 icons */
+
+.leftImage {
+	text-align: center;
+	font-size: 40px;
+	word-spacing: 30px;
+}
+/* 3 icons end */
+
+.about {
+	display: flex;
+	justify-content: center;
+	padding: 4% 20%;
+	background: #e6e6e6;	
+}
+
+.allText h2 {
+	font-size: 2rem;
+	padding: 3% 0;
+}
+
+.allText p {
+	font-size: 1.4rem;
+	padding: 15px 0;
+	word-spacing: 3px;
+
+}
+
+button {
+	font-size: 1.5rem;
+	color: #fff;
+	border: none;
+	background: #333333;
+	padding: 10px 20px;
+	margin-top: 3%;
+}
+
+/* all text | about finished */
+
+.letsTalk {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.letsTalk h1 {
+	font-size: 2rem;
+	padding: 40px 0;
+}
+
+.letsTalk p {
+	font-size: 1.5rem;
+	padding-bottom: 20px;
+}
+
+.letsTalk h2 {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	width: 42%;
+	padding: 50px 0;
+}
+
+.letsTalk span {
+	font-size: 1.3rem;
+
+}
